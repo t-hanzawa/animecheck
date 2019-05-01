@@ -1,7 +1,10 @@
-# projectanime
+# アニメ検索くん
+'アニメ検索くん' is using Vue.js, Vuetify
 
 ## Project setup
 ```
+git clone https://github.com/h4n24w4/animecheck.git
+cd animecheck
 npm install
 ```
 
@@ -15,15 +18,12 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### Package
 ```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
+vue: 2.6.10
+vuetify: 1.5.14
+axios: 0.18.0
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Contact
+[@h4n24w4](https://twitter.com/h4n24w4).
