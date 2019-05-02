@@ -6,6 +6,7 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 export default {
     data() {
         return {
+            dialog: false,
             year: '',
             season: '',
             animes: [],
