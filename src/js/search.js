@@ -23,12 +23,12 @@ export default {
          * 2014 ～ 現在までの年数を取得する関数
          */
         getYear: function() {
-            const currentYear = (new Date()).getFullYear();
-            let baseYear = 2014;
+            let currentYear = (new Date()).getFullYear();
+            const baseYear = 2014;
             let years = []
             while(currentYear >= baseYear) {
-                years.push({value: baseYear, text: baseYear + '年'})
-                baseYear += 1;
+                years.push({value: currentYear, text: currentYear + '年'})
+                currentYear -= 1;
             }
             return years
         },
