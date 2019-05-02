@@ -1,4 +1,25 @@
 <v-container id="inspire" grid-list-xl>
+    <p>
+        2014年以降のアニメ作品を検索できます。
+    </p>
+    <p>
+        <v-icon>
+            mdi-laptop
+        </v-icon>
+        : 公式ホームページ
+    </p>
+    <p>
+        <v-icon>
+            mdi-twitter
+        </v-icon>
+        : Twitterアカウント
+    </p>
+    <p>
+        <v-icon>
+            mdi-pound-box
+        </v-icon>
+        : ハッシュタグ検索
+    </p>
     <v-layout row wrap>
         <v-flex xs12 sm6>
             <v-overflow-btn v-model="year" label='年' :items="selectYear" @change="getAnime"></v-overflow-btn>
@@ -15,22 +36,29 @@
                         <div class="headline">
                             {{ anime.title }}
                         </div>
-                        <div>
-                            #{{ anime.twitter_hash_tag }}
-                        </div>
                     </div>
                 </v-card-title>
                 <v-divider light></v-divider>
                 <v-card-actions class="pa-3">
-                    <v-btn outline color="indigo">
+                    <v-btn flat>
                         <a v-bind:href="anime.public_url">
-                            公式
+                            <v-icon>
+                                mdi-laptop
+                            </v-icon>
                         </a>
                     </v-btn>
-                    <v-spacer></v-spacer>
-                    <v-btn outline color="indigo">
+                    <v-btn flat>
                         <a v-bind:href="'https://twitter.com/' + anime.twitter_account">
-                            Twitter
+                            <v-icon>
+                                mdi-twitter
+                            </v-icon>
+                        </a>
+                    </v-btn>
+                    <v-btn flat>
+                        <a v-bind:href="'https://twitter.com/search?q=%23' + anime.twitter_hash_tag + '&src=typd'">
+                            <v-icon>
+                                mdi-pound-box
+                            </v-icon>
                         </a>
                     </v-btn>
                 </v-card-actions>
