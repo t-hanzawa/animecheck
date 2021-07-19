@@ -24,6 +24,3 @@ vue: 2.6.10
 vuetify: 1.5.14
 axios: 0.18.0
 ```
-
-### Contact
-[@h4n24w4](https://twitter.com/h4n24w4).
